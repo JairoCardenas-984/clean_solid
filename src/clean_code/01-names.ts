@@ -34,7 +34,7 @@
     const elapsedDays = 23;
 
     // Número de archivos en un directorio
-    const filesInDirectory = 33;
+    const numberOFfilesInDirectory = 33;
 
     // Primer nombre
     const firstName = 'Fernando';

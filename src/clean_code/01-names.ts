@@ -27,27 +27,26 @@
 
     // Todo: Tarea
         
-    // día de hoy - today
-    const ddmmyyyy = new Date();
-    
-    // días transcurridos - elapsed time in days
-    const d: number = 23;
-    
-    // número de archivos en un directorio - number of files in directory
-    const dir = 33;
-    
-    // primer nombre - first name
-    const nombre = 'Fernando';
-    
-    // primer apellido - last name
-    const apellido = 'Herrera';
+     // Fecha actual
+    const currentDate = new Date();
 
-    // días desde la última modificación - days since modification
-    const dsm = 12;
-    
-    // cantidad máxima de clases por estudiante - max classes per student
-    const max = 6;
+    // Días transcurridos
+    const elapsedDays = 23;
 
+    // Número de archivos en un directorio
+    const filesInDirectory = 33;
+
+    // Primer nombre
+    const firstName = 'Fernando';
+
+    // Apellido
+    const lastName = 'Herrera';
+
+    // Días desde la última modificación
+    const daysSinceLastModification = 12;
+
+    // Cantidad máxima de clases por estudiante
+    const maxClassesPerStudent = 6;
 
 })();
 console.log('Ejercicio 01 ejecutado');

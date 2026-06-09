@@ -1,4 +1,6 @@
 import './style.css'
+import './clean_code/01-names';
+import './clean_code/02-name-types';
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 

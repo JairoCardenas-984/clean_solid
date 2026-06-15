@@ -1,20 +1,21 @@
 (() => {
 
-    // función para obtener información de una película por Id
-    function getMovieById(movieId: string) {
+    // Obtener información de una película por ID
+    function getMovieById(movieId: string): void {
         console.log({ movieId });
     }
 
-    // función para obtener información de los actores de una película
-    function getMovieCastById(movieId: string) {
+    // Obtener el elenco de una película por ID
+    function getMovieCastById(movieId: string): void {
         console.log({ movieId });
     }
 
-    // función para obtener la biografía del actor por su Id
-    function getActorBioById(actorId: string) {
+    // Obtener la biografía de un actor por ID
+    function getActorBiographyById(actorId: string): void {
         console.log({ actorId });
     }
-    
+
+
     // Crear una película
     interface Movie {
         title: string;
@@ -22,27 +23,58 @@
         rating: number;
         cast: string[];
     }
-    function createMovie({ title,description,rating,cast}:Movie)
-     {
-        console.log({ title, description, rating, cast });
+
+    function createMovie(movie: Movie): void {
+        const { title, description, rating, cast } = movie;
+
+        console.log({
+            title,
+            description,
+            rating,
+            cast
+        });
     }
 
-    // Crear un nuevo actor si no existe
-    function createActor
-    (fullName: string, birthDate: Date): boolean {
-        
-            // tarea asíncrona para verificar nombre
-            // ..
-            // ..
 
-            if (fullName === 'fernando') return false;
+    // Crear un actor si no existe
+    function createActor(
+        fullName: string,
+        birthDate: Date
+    ): boolean {
 
-            console.log('Crear actor');
-            return true;
+        // Tarea asíncrona para verificar el nombre
+        // ...
+
+        if (fullName.toLowerCase() === 'fernando') {
+            return false;
+        }
+
+        console.log('Crear actor', {
+            fullName,
+            birthDate
+        });
+
+        return true;
     }
+
+
+    // Pruebas
+    getMovieById('1');
+
+    getMovieCastById('1');
+
+    getActorBiographyById('101');
+
+    createMovie({
+        title: 'Avengers',
+        description: 'Película de superhéroes',
+        rating: 9,
+        cast: ['Robert Downey Jr.', 'Chris Evans']
+    });
+
+    console.log(
+        createActor('Juan Pérez', new Date('1990-05-15'))
+    );
 
 })();
-
-
-
 

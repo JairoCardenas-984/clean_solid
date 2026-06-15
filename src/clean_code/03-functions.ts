@@ -4,7 +4,6 @@
     function getMovieById(movieId: string): void {
         console.log({ movieId });
     }
-
     // Obtener el elenco de una película por ID
     function getMovieCastById(movieId: string): void {
         console.log({ movieId });
